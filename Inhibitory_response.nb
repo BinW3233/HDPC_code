@@ -1,0 +1,98 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3074,         90]
+NotebookOptionsPosition[      2710,         76]
+NotebookOutlinePosition[      3121,         92]
+CellTagsIndexPosition[      3078,         89]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"Get", "[", "\"\<IneuronRep.m\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"size", "=", "1000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"lambda", "=", "0.7"}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "values", " ", "for", " ", "interpolation", " ", "parameter", " ", 
+    "lambda"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p", " ", "=", " ", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mu", " ", "=", " ", "0.9"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"hImis", ",", "hImisy", ",", "hIfull"}], "}"}], "=", 
+    RowBox[{"IneuronRate", "[", 
+     RowBox[{"lambda", ",", "mu", ",", "p", ",", "size"}], "]"}]}], ";"}], 
+  " ", 
+  RowBox[{"(*", 
+   RowBox[{"the", " ", "4", " ", "input", " ", "arguments", " ", 
+    RowBox[{"are", " ", "[", 
+     RowBox[{"lambda", ",", " ", "mu", ",", " ", "p", ",", " ", "size"}], 
+     "]"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"The", " ", "3", " ", "output", " ", "variables", " ", 
+     RowBox[{"are", ":", " ", "\[IndentingNewLine]", "hImis", ":", " ", 
+      RowBox[{
+       RowBox[{
+       "voltage", " ", "level", " ", "of", " ", "inhibitory", " ", "neurons", 
+        " ", "in", " ", "x"}], "-", 
+       RowBox[{"only", " ", "mismatch", " ", "condition"}]}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"hImisy", ":", " ", 
+     RowBox[{
+      RowBox[{
+      "voltage", " ", "level", " ", "of", " ", "inhibitory", " ", "neurons", 
+       " ", "in", " ", "y"}], "-", 
+      RowBox[{"only", " ", "mismatch", " ", "condition"}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"hIfull", ":", " ", 
+     RowBox[{
+     "voltage", " ", "level", " ", "of", " ", "inhibitory", " ", "neurons", 
+      " ", "in", " ", "match", " ", "condition"}]}], ";"}], 
+   "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.9488947132026663`*^9, 3.9488947520651274`*^9}, {
+  3.94889482496229*^9, 3.9488948475541754`*^9}, {3.948894898801109*^9, 
+  3.948895041710558*^9}},ExpressionUUID->"d087267b-ca79-434c-b88b-\
+0137ace8ec9c"]
+},
+WindowSize->{934.5, 655.5},
+WindowMargins->{{Automatic, 230.25}, {22.5, Automatic}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cfd922e4-240a-428e-9bb1-2cfc2887a870"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2148, 54, 200, "Input",ExpressionUUID->"d087267b-ca79-434c-b88b-0137ace8ec9c"]
+}
+]
+*)
+
