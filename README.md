@@ -9,3 +9,5 @@ This repository contains all the code files for the preprint, Wang, Audette, Sch
 5. "Sparse_network.m" will generate the time-dependent neural responses for sparsified, asymmetric predictive processsing network.
 
 Stimulus condition can be specified by changing the values of variables, x and y in the code. Other relevant parameters are also defined and modifiable in the coresponding code file. See the comments in the code file for details.
+
+Note that "Inhibitory_response.nb" is a Mathematica code file. All other code files are Matlab codes.
