@@ -1,5 +1,5 @@
 # HDPC_code
-This repository contains all the code files for the preprint, Wang, Audette, Schneider, & Aljadeff. Desegregation of neuronal predictive processing. bioRxiv (2024).
+This repository contains all the code files for the preprint, Wang, Audette, Schneider, & Aljadeff. "Desegregation of neuronal predictive processing." bioRxiv (2024).
 
 
 1. "SS_network.m" will generate the steady state neural responses in the predictive processing network. 
