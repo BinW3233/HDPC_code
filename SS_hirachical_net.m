@@ -43,11 +43,11 @@ jmatrix2 = (w2l *  w2l' + v2l *  v2l')/size;
 jmatrix3 = (w3l *  w3l'+ v3 * v3')/size;
 
 %% Define the differential equation and solve using ode45
-dhdt = @(t, h) odefun(t, h, size, jmatrix1, jmatrix2, jmatrix3, w1, w2, w3, v1, v2, v3, b1, b2, theta, 1, x, y);
+dhdt = @(t, h) odefun(t, h, size, jmatrix1, jmatrix2, jmatrix3, w1, w2, w3, v1, v2, v3, b1, b2, theta, x, y);
 
 [t, h] = ode23tb(dhdt, [0, 4], h0);
 hf = h(end,:)';
-rf = max(hf = theta, 0);
+rf = max(hf - theta, 0);
 
 %% Save the data
 title = 'Hierachical_response.mat';
